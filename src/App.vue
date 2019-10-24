@@ -1,28 +1,25 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <LikeHead></LikeHead>
+    <LikeNum></LikeNum>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+  // Local
+  import LikeHead from "./LikeHead";
 
-export default {
-  name: 'app',
-  components: {
-    HelloWorld
+  export default {
+    // Local
+    components: {
+      LikeHead
+    }
   }
-}
 </script>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style >
+  body{
+    padding: 2%;
+  }
+
 </style>
